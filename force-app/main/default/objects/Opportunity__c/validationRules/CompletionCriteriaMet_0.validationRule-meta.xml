@@ -8,7 +8,7 @@
         AND(
             ISPICKVAL(StageName__c, &quot;フェーズ0 情報&quot;),
             OR(
-                NOT(INCLUDES(CompletionBasis__c, &quot;0-1:お客様へ提案するための調査を完了した。！！！！！！&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;0-1:お客様へ提案するための調査を完了した。！！！！！！！&quot;)),
                 NOT(INCLUDES(CompletionBasis__c, &quot;0-2:仮説課題をたてて、提案骨子を整理した。&quot;)),
                 NOT(INCLUDES(CompletionBasis__c, &quot;0-3:上長に提案内容を相談し、承認を得た。&quot;)),
                 NOT(INCLUDES(CompletionBasis__c, &quot;0-4:提案資料を作成した。&quot;)),
