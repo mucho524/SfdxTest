@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompletionCriteriaMet_5</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(RecordType.DeveloperName = &quot;NewOperationalTest&quot;, RecordType.DeveloperName = &quot;OldNewOperationalTest&quot;),
+    OR(
+        AND(
+            ISPICKVAL(StageName__c, &quot;フェーズ5 提案済み&quot;),
+            OR(
+                NOT(INCLUDES(CompletionBasis__c, &quot;5-1:提案内容を理解いただき、方向性の合意をいただいた。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;5-2:試作品・実機で打ち合わせを実施し、改良点を確認した。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;5-3:改良点を修正した資料で、再度提案を実施した。&quot;))
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>完了基準を満たしていません！！</errorMessage>
+</ValidationRule>

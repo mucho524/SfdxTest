@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecruitmentCompany__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>企業</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>案件情報</relationshipLabel>
+    <relationshipName>JobInfo</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

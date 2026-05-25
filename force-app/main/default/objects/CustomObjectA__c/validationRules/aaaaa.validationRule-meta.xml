@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>aaaaa</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(ISNEW(), DateTime__c &lt; NOW(), DateTime__c  &lt;  CreatedDate)</errorConditionFormula>
+    <errorMessage>前の日付やで</errorMessage>
+</ValidationRule>

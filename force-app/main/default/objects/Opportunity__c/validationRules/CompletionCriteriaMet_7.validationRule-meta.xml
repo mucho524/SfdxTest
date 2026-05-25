@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompletionCriteriaMet_7</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(RecordType.DeveloperName = &quot;NewOperationalTest&quot;, RecordType.DeveloperName = &quot;OldNewOperationalTest&quot;),
+    OR(
+        AND(
+            ISPICKVAL(StageName__c, &quot;フェーズ7 見積提出&quot;),
+            OR(
+                NOT(INCLUDES(CompletionBasis__c, &quot;7-1:提案内容に基づく見積書を提示した。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;7-2:見積もりの附帯事項を説明した。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;7-3:見積りに対して担当者に理解をいただいた。&quot;))
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>完了基準を満たしていません！！</errorMessage>
+</ValidationRule>

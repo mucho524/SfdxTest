@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>accuraccuracy_newacy_new__c</fullName>
+    <formula>/* 旧運用：accuracy_old__c に値がある場合 */
+IF(
+    NOT(ISPICKVAL(accuracy_old__c, &quot;&quot;)),
+    CASE(
+        TEXT(StageName__c) &amp; TEXT(accuracy_old__c),
+            &quot;フェーズ0 情報▲▲&quot;, 0,
+            &quot;フェーズ1 顧客訪問・商品紹介▲▲&quot;, 0,
+            &quot;フェーズ2 ヒアリング▲▲&quot;, 0,
+            &quot;フェーズ3 引合い▲▲&quot;, 0,
+            &quot;フェーズ4 概算・効果提案▲▲&quot;, 0,
+            &quot;フェーズ5 提案済み▲▲&quot;, 0,
+            &quot;フェーズ6 本提案合意▲▲&quot;, 0,
+            &quot;フェーズ7 見積提出▲▲&quot;, 0,
+            &quot;フェーズ8 担当内諾▲▲&quot;, 0.1,
+            &quot;フェーズ9 役員内定▲&quot;, 0.3,
+            &quot;フェーズ10 運用方法確定△&quot;, 0.4,
+            &quot;フェーズ11 役員決裁裁可〇△&quot;, 0.8,
+            &quot;フェーズ12 受注〇&quot;, 1,
+            0
+        ),
+    IF(
+        NOT(ISPICKVAL(StageName__c, &quot;&quot;)), 
+        /* 新運用：StageName__c に値がある場合 */
+        CASE(
+            TEXT(StageName__c), 
+                &quot;フェーズ0 情報&quot;, 0, 
+                &quot;フェーズ1 顧客訪問・商品紹介&quot;, 0, 
+                &quot;フェーズ2 ヒアリング&quot;, 0, 
+                &quot;フェーズ3 引合い&quot;, 0, 
+                &quot;フェーズ4 概算・効果提案&quot;, 0, 
+                &quot;フェーズ5 提案済み&quot;, 0, 
+                &quot;フェーズ6 本提案合意&quot;, 0, 
+                &quot;フェーズ7 見積提出&quot;, 0, 
+                &quot;フェーズ8 担当内諾&quot;, 0.1, 
+                &quot;フェーズ9 役員内定&quot;, 0.3, 
+                &quot;フェーズ10 運用方法確定&quot;, 0.4, 
+                &quot;フェーズ11 役員決裁裁可&quot;, 0.8, 
+                &quot;フェーズ12 受注&quot;, 1, 
+                &quot;失注&quot;, 0, 
+                0
+        ),
+        /* どちらも空の場合 */
+        0
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>確度(新)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

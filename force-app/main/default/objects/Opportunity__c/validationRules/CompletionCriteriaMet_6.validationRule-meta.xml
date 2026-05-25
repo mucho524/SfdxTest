@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompletionCriteriaMet_6</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &quot;NewOperationalTest&quot;,
+    OR(
+        AND(
+            ISPICKVAL(StageName__c, &quot;フェーズ6 本提案合意&quot;),
+            OR(
+                NOT(INCLUDES(CompletionBasis__c, &quot;6-1:提案内容を理解いただき、方向性の合意をいただいた。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;6-2:NDAが締結でき、お客様から見積提出に必要な情報を取得した。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;6-3:提案内容に基づき見積書の作成を依頼された。&quot;))
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>完了基準を満たしていません！！</errorMessage>
+</ValidationRule>

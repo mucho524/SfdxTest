@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Text3__c</fullName>
+    <label>テキスト3</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>wer1</fullName>
+                <default>false</default>
+                <label>wer1</label>
+            </value>
+            <value>
+                <fullName>あああ</fullName>
+                <default>false</default>
+                <label>あああ</label>
+            </value>
+            <value>
+                <fullName>江尾rジェおrj千枝rt</fullName>
+                <default>false</default>
+                <label>江尾rジェおrj千枝rt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

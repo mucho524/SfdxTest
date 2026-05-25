@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompletionBasis__c</fullName>
+    <label>完了基準</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>StageName__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0-1:お客様へ提案するための調査を完了した。</fullName>
+                <default>false</default>
+                <label>0-1:お客様へ提案するための調査を完了した。</label>
+            </value>
+            <value>
+                <fullName>0-2:仮説課題をたてて、提案骨子を整理した。</fullName>
+                <default>false</default>
+                <label>0-2:仮説課題をたてて、提案骨子を整理した。</label>
+            </value>
+            <value>
+                <fullName>0-3:上長に提案内容を相談し、承認を得た。</fullName>
+                <default>false</default>
+                <label>0-3:上長に提案内容を相談し、承認を得た。</label>
+            </value>
+            <value>
+                <fullName>0-4:提案資料を作成した。</fullName>
+                <default>false</default>
+                <label>0-4:提案資料を作成した。</label>
+            </value>
+            <value>
+                <fullName>0-5:お客様にアポイントが取れた。</fullName>
+                <default>false</default>
+                <label>0-5:お客様にアポイントが取れた。</label>
+            </value>
+            <value>
+                <fullName>1-1:お客様を訪問、または非対面で面談し、当社の紹介を行った。</fullName>
+                <default>false</default>
+                <label>1-1:お客様を訪問、または非対面で面談し、当社の紹介を行った。</label>
+            </value>
+            <value>
+                <fullName>1-2:お客様との商談から、仮説に対して意見をいただいた。</fullName>
+                <default>false</default>
+                <label>1-2:お客様との商談から、仮説に対して意見をいただいた。</label>
+            </value>
+            <value>
+                <fullName>1-3:次回商談の日程を確定した。</fullName>
+                <default>false</default>
+                <label>1-3:次回商談の日程を確定した。</label>
+            </value>
+            <value>
+                <fullName>2-1:お客様から頂いた意見を活かして、提案資料を作成した。</fullName>
+                <default>false</default>
+                <label>2-1:お客様から頂いた意見を活かして、提案資料を作成した。</label>
+            </value>
+            <value>
+                <fullName>2-2: お客様に提案を実施し、仮説課題に対して意見交換ができた。</fullName>
+                <default>false</default>
+                <label>2-2: お客様に提案を実施し、仮説課題に対して意見交換ができた。</label>
+            </value>
+            <value>
+                <fullName>2-3: より具体的案提案をするため、次回のアポイントが取れた。</fullName>
+                <default>false</default>
+                <label>2-3: より具体的案提案をするため、次回のアポイントが取れた。</label>
+            </value>
+            <value>
+                <fullName>3-1:これまでの仮説検討に沿い、お客様に適当な商品を選択し、提案した。</fullName>
+                <default>false</default>
+                <label>3-1:これまでの仮説検討に沿い、お客様に適当な商品を選択し、提案した。</label>
+            </value>
+            <value>
+                <fullName>3-2:お客様の現場を訪問した。</fullName>
+                <default>false</default>
+                <label>3-2:お客様の現場を訪問した。</label>
+            </value>
+            <value>
+                <fullName>3-3:概算見積もり、費用対効果を提示するアポイントが取れた。</fullName>
+                <default>false</default>
+                <label>3-3:概算見積もり、費用対効果を提示するアポイントが取れた。</label>
+            </value>
+            <value>
+                <fullName>4-1:概算見積もり、費用対効果を提示し、金額感を掴んでいただいた。</fullName>
+                <default>false</default>
+                <label>4-1:概算見積もり、費用対効果を提示し、金額感を掴んでいただいた。</label>
+            </value>
+            <value>
+                <fullName>4-2:本提案を行うための、方向性を確認できた。</fullName>
+                <default>false</default>
+                <label>4-2:本提案を行うための、方向性を確認できた。</label>
+            </value>
+            <value>
+                <fullName>4-3:本提案実施のアポイントが取れた。</fullName>
+                <default>false</default>
+                <label>4-3:本提案実施のアポイントが取れた。</label>
+            </value>
+            <value>
+                <fullName>5-1:提案内容を理解いただき、方向性の合意をいただいた。</fullName>
+                <default>false</default>
+                <label>5-1:提案内容を理解いただき、方向性の合意をいただいた。</label>
+            </value>
+            <value>
+                <fullName>5-2:試作品・実機で打ち合わせを実施し、改良点を確認した。</fullName>
+                <default>false</default>
+                <label>5-2:試作品・実機で打ち合わせを実施し、改良点を確認した。</label>
+            </value>
+            <value>
+                <fullName>5-3:改良点を修正した資料で、再度提案を実施した。</fullName>
+                <default>false</default>
+                <label>5-3:改良点を修正した資料で、再度提案を実施した。</label>
+            </value>
+            <value>
+                <fullName>6-1:提案内容を理解いただき、方向性の合意をいただいた。</fullName>
+                <default>false</default>
+                <label>6-1:提案内容を理解いただき、方向性の合意をいただいた。</label>
+            </value>
+            <value>
+                <fullName>6-2:NDAが締結でき、お客様から見積提出に必要な情報を取得した。</fullName>
+                <default>false</default>
+                <label>6-2:NDAが締結でき、お客様から見積提出に必要な情報を取得した。</label>
+            </value>
+            <value>
+                <fullName>6-3:提案内容に基づき見積書の作成を依頼された。</fullName>
+                <default>false</default>
+                <label>6-3:提案内容に基づき見積書の作成を依頼された。</label>
+            </value>
+            <value>
+                <fullName>7-1:提案内容に基づく見積書を提示した。</fullName>
+                <default>false</default>
+                <label>7-1:提案内容に基づく見積書を提示した。</label>
+            </value>
+            <value>
+                <fullName>7-2:見積もりの附帯事項を説明した。</fullName>
+                <default>false</default>
+                <label>7-2:見積もりの附帯事項を説明した。</label>
+            </value>
+            <value>
+                <fullName>7-3:見積りに対して担当者に理解をいただいた。</fullName>
+                <default>false</default>
+                <label>7-3:見積りに対して担当者に理解をいただいた。</label>
+            </value>
+            <value>
+                <fullName>8-1:担当者に内諾をいただいた。</fullName>
+                <default>false</default>
+                <label>8-1:担当者に内諾をいただいた。</label>
+            </value>
+            <value>
+                <fullName>8-2:その後の工程、進め方について、担当者と打ち合わせを行った。</fullName>
+                <default>false</default>
+                <label>8-2:その後の工程、進め方について、担当者と打ち合わせを行った。</label>
+            </value>
+            <value>
+                <fullName>8-3:担当役員へ提案実施のアポイントが取れた。</fullName>
+                <default>false</default>
+                <label>8-3:担当役員へ提案実施のアポイントが取れた。</label>
+            </value>
+            <value>
+                <fullName>9-1:担当役員に内諾をいただいた。</fullName>
+                <default>false</default>
+                <label>9-1:担当役員に内諾をいただいた。</label>
+            </value>
+            <value>
+                <fullName>9-2:その後の工程、進め方について、担当者と打ち合わせを行った。</fullName>
+                <default>false</default>
+                <label>9-2:その後の工程、進め方について、担当者と打ち合わせを行った。</label>
+            </value>
+            <value>
+                <fullName>9-3:現場運用に関する打ち合わせを行うための、日程調整が完了した。</fullName>
+                <default>false</default>
+                <label>9-3:現場運用に関する打ち合わせを行うための、日程調整が完了した。</label>
+            </value>
+            <value>
+                <fullName>10-1:顧客の現場責任者と打ち合わせを行い、運用方法、配置を確定した。</fullName>
+                <default>false</default>
+                <label>10-1:顧客の現場責任者と打ち合わせを行い、運用方法、配置を確定した。</label>
+            </value>
+            <value>
+                <fullName>10-2:TANAX内での運用に関する打ち合わせを完了した。</fullName>
+                <default>false</default>
+                <label>10-2:TANAX内での運用に関する打ち合わせを完了した。</label>
+            </value>
+            <value>
+                <fullName>10-3:お客様の役員決裁に向けて資料を作成し、アポイントを確定した。</fullName>
+                <default>false</default>
+                <label>10-3:お客様の役員決裁に向けて資料を作成し、アポイントを確定した。</label>
+            </value>
+            <value>
+                <fullName>11-1:①決裁者への説明を完了した。</fullName>
+                <default>false</default>
+                <label>11-1:①決裁者への説明を完了した。</label>
+            </value>
+            <value>
+                <fullName>11-2:②決裁者から提案内容と見積りに合意をいただいた。</fullName>
+                <default>false</default>
+                <label>11-2:②決裁者から提案内容と見積りに合意をいただいた。</label>
+            </value>
+            <value>
+                <fullName>11-3:③注文書を受け取った。</fullName>
+                <default>false</default>
+                <label>11-3:③注文書を受け取った。</label>
+            </value>
+            <value>
+                <fullName>12-1: 注文書に基づき、サプライヤーへの注文が完了した。</fullName>
+                <default>false</default>
+                <label>12-1: 注文書に基づき、サプライヤーへの注文が完了した。</label>
+            </value>
+            <value>
+                <fullName>12-2: 納期回答を行った。</fullName>
+                <default>false</default>
+                <label>12-2: 納期回答を行った。</label>
+            </value>
+            <value>
+                <fullName>12-3: 初回納品が確認でき、お客様へお礼の訪問を実施した。</fullName>
+                <default>false</default>
+                <label>12-3: 初回納品が確認でき、お客様へお礼の訪問を実施した。</label>
+            </value>
+            <value>
+                <fullName>12-4: 次回の注文を確認した。</fullName>
+                <default>false</default>
+                <label>12-4: 次回の注文を確認した。</label>
+            </value>
+            <value>
+                <fullName>13-1: 上長に状況を報告し、継続・失注判断を得た。</fullName>
+                <default>false</default>
+                <label>13-1: 上長に状況を報告し、継続・失注判断を得た。</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>フェーズ10 運用方法確定</controllingFieldValue>
+            <valueName>10-1:顧客の現場責任者と打ち合わせを行い、運用方法、配置を確定した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ10 運用方法確定</controllingFieldValue>
+            <valueName>10-2:TANAX内での運用に関する打ち合わせを完了した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ10 運用方法確定</controllingFieldValue>
+            <valueName>10-3:お客様の役員決裁に向けて資料を作成し、アポイントを確定した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ11 役員決裁裁可</controllingFieldValue>
+            <valueName>11-1:①決裁者への説明を完了した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ11 役員決裁裁可</controllingFieldValue>
+            <valueName>11-2:②決裁者から提案内容と見積りに合意をいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ11 役員決裁裁可</controllingFieldValue>
+            <valueName>11-3:③注文書を受け取った。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ12 受注</controllingFieldValue>
+            <valueName>12-1: 注文書に基づき、サプライヤーへの注文が完了した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ12 受注</controllingFieldValue>
+            <valueName>12-2: 納期回答を行った。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ12 受注</controllingFieldValue>
+            <valueName>12-3: 初回納品が確認でき、お客様へお礼の訪問を実施した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ12 受注</controllingFieldValue>
+            <valueName>12-4: 次回の注文を確認した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>失注</controllingFieldValue>
+            <valueName>13-1: 上長に状況を報告し、継続・失注判断を得た。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ0 情報</controllingFieldValue>
+            <valueName>0-1:お客様へ提案するための調査を完了した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ0 情報</controllingFieldValue>
+            <valueName>0-2:仮説課題をたてて、提案骨子を整理した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ0 情報</controllingFieldValue>
+            <valueName>0-3:上長に提案内容を相談し、承認を得た。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ0 情報</controllingFieldValue>
+            <valueName>0-4:提案資料を作成した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ0 情報</controllingFieldValue>
+            <valueName>0-5:お客様にアポイントが取れた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ1 顧客訪問・商品紹介</controllingFieldValue>
+            <valueName>1-1:お客様を訪問、または非対面で面談し、当社の紹介を行った。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ1 顧客訪問・商品紹介</controllingFieldValue>
+            <valueName>1-2:お客様との商談から、仮説に対して意見をいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ1 顧客訪問・商品紹介</controllingFieldValue>
+            <valueName>1-3:次回商談の日程を確定した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ2 ヒアリング</controllingFieldValue>
+            <valueName>2-1:お客様から頂いた意見を活かして、提案資料を作成した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ2 ヒアリング</controllingFieldValue>
+            <valueName>2-2: お客様に提案を実施し、仮説課題に対して意見交換ができた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ2 ヒアリング</controllingFieldValue>
+            <valueName>2-3: より具体的案提案をするため、次回のアポイントが取れた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ3 引合い</controllingFieldValue>
+            <valueName>3-1:これまでの仮説検討に沿い、お客様に適当な商品を選択し、提案した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ3 引合い</controllingFieldValue>
+            <valueName>3-2:お客様の現場を訪問した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ3 引合い</controllingFieldValue>
+            <valueName>3-3:概算見積もり、費用対効果を提示するアポイントが取れた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ4 概算・効果提案</controllingFieldValue>
+            <valueName>4-1:概算見積もり、費用対効果を提示し、金額感を掴んでいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ4 概算・効果提案</controllingFieldValue>
+            <valueName>4-2:本提案を行うための、方向性を確認できた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ4 概算・効果提案</controllingFieldValue>
+            <valueName>4-3:本提案実施のアポイントが取れた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ5 提案済み</controllingFieldValue>
+            <valueName>5-1:提案内容を理解いただき、方向性の合意をいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ5 提案済み</controllingFieldValue>
+            <valueName>5-2:試作品・実機で打ち合わせを実施し、改良点を確認した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ5 提案済み</controllingFieldValue>
+            <valueName>5-3:改良点を修正した資料で、再度提案を実施した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ6 本提案合意</controllingFieldValue>
+            <valueName>6-1:提案内容を理解いただき、方向性の合意をいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ6 本提案合意</controllingFieldValue>
+            <valueName>6-2:NDAが締結でき、お客様から見積提出に必要な情報を取得した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ6 本提案合意</controllingFieldValue>
+            <valueName>6-3:提案内容に基づき見積書の作成を依頼された。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ7 見積提出</controllingFieldValue>
+            <valueName>7-1:提案内容に基づく見積書を提示した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ7 見積提出</controllingFieldValue>
+            <valueName>7-2:見積もりの附帯事項を説明した。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ7 見積提出</controllingFieldValue>
+            <valueName>7-3:見積りに対して担当者に理解をいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ8 担当内諾</controllingFieldValue>
+            <valueName>8-1:担当者に内諾をいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ8 担当内諾</controllingFieldValue>
+            <valueName>8-2:その後の工程、進め方について、担当者と打ち合わせを行った。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ8 担当内諾</controllingFieldValue>
+            <valueName>8-3:担当役員へ提案実施のアポイントが取れた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ9 役員内定</controllingFieldValue>
+            <valueName>9-1:担当役員に内諾をいただいた。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ9 役員内定</controllingFieldValue>
+            <valueName>9-2:その後の工程、進め方について、担当者と打ち合わせを行った。</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>フェーズ9 役員内定</controllingFieldValue>
+            <valueName>9-3:現場運用に関する打ち合わせを行うための、日程調整が完了した。</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

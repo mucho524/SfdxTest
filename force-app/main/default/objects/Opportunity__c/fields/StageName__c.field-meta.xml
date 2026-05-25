@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StageName__c</fullName>
+    <label>フェーズ</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>フェーズ0 情報</fullName>
+                <default>false</default>
+                <label>フェーズ0 情報</label>
+            </value>
+            <value>
+                <fullName>フェーズ1 顧客訪問・商品紹介</fullName>
+                <default>false</default>
+                <label>フェーズ1 顧客訪問・商品紹介</label>
+            </value>
+            <value>
+                <fullName>フェーズ2 ヒアリング</fullName>
+                <default>false</default>
+                <label>フェーズ2 ヒアリング</label>
+            </value>
+            <value>
+                <fullName>フェーズ3 引合い</fullName>
+                <default>false</default>
+                <label>フェーズ3 引合い</label>
+            </value>
+            <value>
+                <fullName>フェーズ4 概算・効果提案</fullName>
+                <default>false</default>
+                <label>フェーズ4 概算・効果提案</label>
+            </value>
+            <value>
+                <fullName>フェーズ5 提案済み</fullName>
+                <default>false</default>
+                <label>フェーズ5 提案済み</label>
+            </value>
+            <value>
+                <fullName>フェーズ6 本提案合意</fullName>
+                <default>false</default>
+                <label>フェーズ6 本提案合意</label>
+            </value>
+            <value>
+                <fullName>フェーズ7 見積提出</fullName>
+                <default>false</default>
+                <label>フェーズ7 見積提出</label>
+            </value>
+            <value>
+                <fullName>フェーズ8 担当内諾</fullName>
+                <default>false</default>
+                <label>フェーズ8 担当内諾</label>
+            </value>
+            <value>
+                <fullName>フェーズ9 役員内定</fullName>
+                <default>false</default>
+                <label>フェーズ9 役員内定</label>
+            </value>
+            <value>
+                <fullName>フェーズ10 運用方法確定</fullName>
+                <default>false</default>
+                <label>フェーズ10 運用方法確定</label>
+            </value>
+            <value>
+                <fullName>フェーズ11 役員決裁裁可</fullName>
+                <default>false</default>
+                <label>フェーズ11 役員決裁裁可</label>
+            </value>
+            <value>
+                <fullName>フェーズ12 受注</fullName>
+                <default>false</default>
+                <label>フェーズ12 受注</label>
+            </value>
+            <value>
+                <fullName>失注</fullName>
+                <default>false</default>
+                <label>失注</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

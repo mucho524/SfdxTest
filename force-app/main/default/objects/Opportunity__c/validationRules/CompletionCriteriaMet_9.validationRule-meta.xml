@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompletionCriteriaMet_9</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(RecordType.DeveloperName = &quot;NewOperationalTest&quot;, RecordType.DeveloperName = &quot;OldNewOperationalTest&quot;),
+    OR(
+        AND(
+            ISPICKVAL(StageName__c, &quot;フェーズ9 役員内定&quot;),
+            OR(
+                NOT(INCLUDES(CompletionBasis__c, &quot;9-1:担当役員に内諾をいただいた。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;9-2:その後の工程、進め方について、担当者と打ち合わせを行った。&quot;)),
+                NOT(INCLUDES(CompletionBasis__c, &quot;9-3:現場運用に関する打ち合わせを行うための、日程調整が完了した。&quot;))
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>完了基準を満たしていません！！</errorMessage>
+</ValidationRule>
