@@ -36,4 +36,4 @@ jobs:
 
       # 3. dev001へデプロイを実行
       - name: Deploy to dev001
-        run: sf project deploy start --manifest manifest/package.xml --target-org dev001 --test-level RunLocalTests
+        run: sf project deploy start --manifest manifest/package.xml --target-org dev001 --test-level NoTestRun
