@@ -1,0 +1,39 @@
+name: Deploy to dev001 Org
+
+# 1. 実行条件：mainブランチへのpush時に実行
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_to_org:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Salesforce CLI
+        run: npm install -g @salesforce/cli
+
+      - name: Display sf version
+        run: sf version
+
+      - name: Make temporary directory
+        run: mkdir ./temp
+
+      - name: Save into private-key
+        run: echo -n "${{ secrets.PRIVATE_KEY_BASE64ED }}" | base64 -d > ./temp/server.key
+
+      # 2. 【修正箇所】 --instance-url を login.salesforce.com に変更しています
+      - name: Authenticate to access the org
+        run: sf org login jwt --instance-url https://login.salesforce.com --jwt-key-file ./temp/server.key --username ${{ secrets.ORG_USER }} --client-id ${{ secrets.CLIENT_ID }} --alias dev001
+
+      # 3. dev001へデプロイを実行
+      - name: Deploy to dev001
+        run: sf project deploy start --manifest manifest/package.xml --target-org dev001
